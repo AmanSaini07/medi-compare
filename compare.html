@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title> Medicine Compare Dynamic Website | MediCompare </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Boxicons CDN Link -->
+  <link rel="stylesheet" href="doctor-support.css">
+  <link rel="stylesheet" href="compare-result.css">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="index.html">Medi Compare</a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name">Medi Compare</span>
+          <i class='bx bx-x'></i>
+        </div>
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="categories.html">Categories</a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow' style="display: none;"></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <!-- <li><a href="#">Acne</a></li>
+              <li><a href="#">Disease Name</a></li>
+              <li><a href="#">Disease Name</a></li>
+              <li class="more">
+                <span><a href="#">More</a> -->
+              <i class='bx bxs-chevron-right arrow more-arrow' style="display: none;"></i>
+              </span>
+              <ul class="more-sub-menu sub-menu">
+                <li><a href="#">Disease Name</a></li>
+                <li><a href="#">Disease Name</a></li>
+                <li><a href="#">Disease Name</a></li>
+              </ul>
+          </li>
+        </ul>
+        </li>
+        <li>
+          <a href="doctor-support.html">Professional Support</a>
+          <i class='bx bxs-chevron-down js-arrow arrow' style="display: none;"></i>
+          <!-- <ul class="js-sub-menu sub-menu">
+              <li><a href="#">Doctor's Name</a></li>
+              <li><a href="#">Doctor's Name</a></li>
+              <li><a href="#">Doctor's Name</a></li>
+              <li><a href="#">Doctor's Name</a></li>
+            </ul> -->
+        </li>
+        <li><a href="compare.html">Compare Medicine</a></li>
+        <!-- <li><a href="compare.html">Health News</a></li> -->
+        <!-- <li><a href="#">Health News</a></li> -->
+        <li><a href="search-page.html" target="_blank">Search</a></li>
+        <li>
+          <a href="login.html" target="_blank">Login/Signup</a>
+          <i class='bx bxs-chevron-down js-arrow arrow'></i>
+          <ul class="js-sub-menu sub-menu">
+            <li><a href="login.html" target="_blank">Customer Login</a></li>
+            <li><a href="login.html" target="_blank">Student Login</a></li>
+            <li><a href="login.html" target="_blank">Vendor Login</a></li>
+            <li><a href="login.html" target="_blank">Doctor Login</a></li>
+          </ul>
+        </li>
+        </ul>
+      </div>
+      <!-- <div class="search-box">
+        <i class='bx bx-search'></i>
+        <div class="input-box">
+          <input type="text" placeholder="Search...">
+        </div>
+      </div> -->
+    </div>
+  </nav>
+  
+  <section>
+
+    <h4 style="display: flex; justify-content: center;">Compare Medicines</h4>
+
+    <div class="spinner" id="spinner" style="display: flex; align-items: center;
+    justify-content: center;">
+      <!-- <div class="spinner-border text-secondary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div> -->
+    </div>
+
+    <div class="image-card">
+
+      <!-- <div class="card" style="width: 18rem;">
+        <img src="Images/image_4.png" class="card-img-top" alt="...">
+        <div class="card-body" style="display: flex; justify-content: space-around;">
+
+          <div class="btn-group dropstart">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: black; border-color: black;">
+              Medicine
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Medicine Name</a></li>
+                <li><a class="dropdown-item" href="#">Medicine Name</a></li>
+                <li><a class="dropdown-item" href="#">Medicine Name</a></li>
+                <li><a class="dropdown-item" href="#">Medicine Name</a></li>
+                <li><a class="dropdown-item" href="#">Medicine Name</a></li>
+                <li><a class="dropdown-item" href="#">Medicine Name</a></li>
+                <li><a class="dropdown-item" href="#">Medicine Name</a></li>
+                <li><a class="dropdown-item" href="#">Medicine Name</a></li>
+                <li><a class="dropdown-item" href="#">Medicine Name</a></li>
+                <li><a class="dropdown-item" href="#">Medicine Name</a></li>
+                <li><a class="dropdown-item" href="#">Medicine Name</a></li>
+                <li><a class="dropdown-item" href="#">Medicine Name</a></li>
+                <li><a class="dropdown-item" href="#">Medicine Name</a></li>
+                <li><a class="dropdown-item" href="#">Medicine Name</a></li>
+                <li><a class="dropdown-item" href="#">Medicine Name</a></li>
+                <li><a class="dropdown-item" href="#">Medicine Name</a></li>
+            </ul>
+          </div>
+
+          <div class="btn-group dropend">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: black; border-color: black;">
+              Disease
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">ACNE</a></li>
+                <li><a class="dropdown-item" href="#">ADHD</a></li>
+                <li><a class="dropdown-item" href="#">ALCHOL ADDICTION</a></li>
+                <li><a class="dropdown-item" href="#">AMOEBIASIS</a></li>
+                <li><a class="dropdown-item" href="#">ANAESTHESIA-LOCAL</a></li>
+                <li><a class="dropdown-item" href="#">ANXIETY</a></li>
+                <li><a class="dropdown-item" href="#">ARTHRITIS</a></li>
+                <li><a class="dropdown-item" href="#">ALZIEMER</a></li>
+                <li><a class="dropdown-item" href="#">BACTERIAL INFECTIONS</a></li>
+                <li><a class="dropdown-item" href="#">FEVER</a></li>
+                <li><a class="dropdown-item" href="#">INFECTION</a></li>
+                <li><a class="dropdown-item" href="#">DIABETES</a></li>
+                <li><a class="dropdown-item" href="#">KIDNEY DISEASES/STONE</a></li>
+                <li><a class="dropdown-item" href="#">PAIN</a></li>
+                <li><a class="dropdown-item" href="#">HEADACE</a></li>
+                <li><a class="dropdown-item" href="#">STOMACHACE</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div> -->
+
+      <div class="card" style="width: 25rem;">
+        <img src="Images/image_4.png" class="card-img-top" alt="...">
+        <div class="card-body" style="display: flex; justify-content: space-around;">
+
+          <!-- <div class="btn-group dropstart">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                  aria-expanded="false" style="background-color: black; border-color: black;">
+                  Medicine
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Medicine Name</a></li>
+                  <li><a class="dropdown-item" href="#">Medicine Name</a></li>
+                  <li><a class="dropdown-item" href="#">Medicine Name</a></li>
+                  <li><a class="dropdown-item" href="#">Medicine Name</a></li>
+                  <li><a class="dropdown-item" href="#">Medicine Name</a></li>
+                  <li><a class="dropdown-item" href="#">Medicine Name</a></li>
+                  <li><a class="dropdown-item" href="#">Medicine Name</a></li>
+                  <li><a class="dropdown-item" href="#">Medicine Name</a></li>
+                  <li><a class="dropdown-item" href="#">Medicine Name</a></li>
+                  <li><a class="dropdown-item" href="#">Medicine Name</a></li>
+                  <li><a class="dropdown-item" href="#">Medicine Name</a></li>
+                  <li><a class="dropdown-item" href="#">Medicine Name</a></li>
+                  <li><a class="dropdown-item" href="#">Medicine Name</a></li>
+                  <li><a class="dropdown-item" href="#">Medicine Name</a></li>
+                  <li><a class="dropdown-item" href="#">Medicine Name</a></li>
+                  <li><a class="dropdown-item" href="#">Medicine Name</a></li>
+                </ul>
+          </div> -->
+
+          <!-- <div class="btn-group dropend">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                  aria-expanded="false" style="background-color: black; border-color: black;">
+                  Disease
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">ACNE</a></li>
+                  <li><a class="dropdown-item" href="#">ADHD</a></li>
+                  <li><a class="dropdown-item" href="#">ALCHOL ADDICTION</a></li>
+                  <li><a class="dropdown-item" href="#">AMOEBIASIS</a></li>
+                  <li><a class="dropdown-item" href="#">ANAESTHESIA-LOCAL</a></li>
+                  <li><a class="dropdown-item" href="#">ANXIETY</a></li>
+                  <li><a class="dropdown-item" href="#">ARTHRITIS</a></li>
+                  <li><a class="dropdown-item" href="#">ALZIEMER</a></li>
+                  <li><a class="dropdown-item" href="#">BACTERIAL INFECTIONS</a></li>
+                  <li><a class="dropdown-item" href="#">FEVER</a></li>
+                  <li><a class="dropdown-item" href="#">INFECTION</a></li>
+                  <li><a class="dropdown-item" href="#">DIABETES</a></li>
+                  <li><a class="dropdown-item" href="#">KIDNEY DISEASES/STONE</a></li>
+                  <li><a class="dropdown-item" href="#">PAIN</a></li>
+                  <li><a class="dropdown-item" href="#">HEADACE</a></li>
+                  <li><a class="dropdown-item" href="#">STOMACHACE</a></li>
+                </ul>
+          </div> -->
+
+          <select class="form-control" name="symptoms-name" id="symptomsName" onChange="myNewFunction(this);">
+            <option value="0">Select Symptom</option>
+            <option value="1">Acne</option>
+            <option value="2">ADHD</option>
+            <option value="3">Alchol Addition</option>
+            <option value="4">Amoebiasis</option>
+            <option value="5">Anaesthesia - Local</option>
+            <option value="6">Anxirty</option>
+            <option value="7">Arthritis</option>
+            <option value="8">Alziemer</option>
+            <option value="9">Bacterial Infections</option>
+            <option value="10">Fever</option>
+            <option value="11">Infection</option>
+            <option value="12">Diabetes</option>
+            <option value="13">Kidney-Disease/Stone</option>
+            <option value="14">Pain</option>
+            <option value="15">Headace</option>
+            <option value="16">Stomachace</option>
+          </select>
+
+          <select class="form-control" name="medicines_name" id="medicinesName" onChange="onMedicineSelect(this);">
+            <option value="">Select Medicine</option>
+          </select>
+
+        </div>
+ 
+      </div>
+
+    </div>
+
+    <div class="spinner" id="spinner1" style="display: flex; align-items: center;
+    justify-content: center;">
+      <!-- <div class="spinner-border text-secondary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div> -->
+
+    <div class="d-grid gap-2 col-6 mx-auto" style="margin-bottom: 20px;" id="compareResultBtn">
+      
+      <!-- <a href="compare-result.html" class="btn btn-primary compare-btn" type="submit">Compare
+        Medicine Now</a> -->
+        <div class="btn btn-primary compare-btn" type="submit">Compare
+          Medicine Now</div>
+    </div>
+
+  </section>
+
+  <div class="footer">
+
+    <footer>
+      <div class="content">
+        <div class="left box">
+          <div class="upper">
+            <div class="topic">About us</div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod harum enim dolorem veniam odio delectus
+              iste cum accusantium esse. Qui rerum mollitia corporis iure neque!</p>
+          </div>
+          <div class="lower">
+            <div class="topic">Contact us</div>
+            <div class="phone">
+              <a href="#"><i class="fas fa-phone-volume"></i>+91 XXXXX XXXXX</a>
+            </div>
+            <div class="email">
+              <a href="#"><i class="fas fa-envelope"></i>admin@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="middle box">
+          <div class="topic">Our Services</div>
+          <div><a href="#">Lorem ipsum dolor sit amet.</a></div>
+          <div><a href="#">Lorem ipsum dolor sit amet.</a></div>
+          <div><a href="#">Lorem ipsum dolor sit amet.</a></div>
+          <div><a href="#">Lorem ipsum dolor sit amet.</a></div>
+          <div><a href="#">Lorem ipsum dolor sit amet.</a></div>
+          <div><a href="#">Lorem ipsum dolor sit amet.</a></div>
+        </div>
+        <div class="right box">
+          <div class="topic">Subscribe us</div>
+          <form action="#">
+            <input type="text" placeholder="Enter email address">
+            <input type="submit" name="" value="Send">
+            <div class="media-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="bottom">
+        <p>Copyright &#169; 2021 <a href="#">Medi Compare Pvt. Ltd.</a> All rights reserved</p>
+      </div>
+    </footer>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+
+  <script src="script.js"></script>
+  <script src="compare.js"></script>
+
+</body>
+
+</html>

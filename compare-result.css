@@ -1,0 +1,51 @@
+.image-card{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+  }
+  
+  .image-card .card{
+    /* margin-left: 10px;
+    margin-right: 10px; */
+    /* border-radius: 15px; */
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  /* .image-card .card img{
+    border-radius: 15px;
+  } */
+  
+  h4{
+    margin-left: 35px;
+  }
+  
+  section h4{
+    margin-top: 30px;
+  }
+
+  .compare-btn{
+    background-color: black;
+    border-color: black;
+  }
+
+  .compare-btn:hover{
+    color: black;
+    background-color: lightgrey;
+    border-color: black;
+  }
+
+  .form-control{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .resultCard{
+    display: none;
+  }
+
+
+  
