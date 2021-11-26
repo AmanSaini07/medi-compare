@@ -585,6 +585,17 @@ section .slick-slider .items img{
   border-radius: 15px;
 }
 
+.viewBtn{
+  padding: 7px;
+  border-radius: 8px;
+}
+
+.viewBtn:hover{
+  cursor: pointer;
+  background-color: lightgray;
+  transition: 0.7s;
+}
+
 
 
 

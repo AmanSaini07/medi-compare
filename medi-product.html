@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
 <html lang="en" dir="ltr">
 
 <head>
@@ -8,9 +7,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <!-- Boxicons CDN Link -->
-  <link rel="stylesheet" href="doctor-support.css">
-  <link rel="stylesheet" href="compare-result.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="product.css">
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -81,104 +81,35 @@
       </div> -->
     </div>
   </nav>
-  
-  <section>
-
-    <h4 style="margin-left: 50px;">Available Medicine Prices With Discount</h4>
-
-    <div class="image-card" id="compareResultAllCards">
-
-      <div class="card" style="width: 18rem;">
-        <img src="Images/image_4.png" class="card-img-top" alt="...">
-        <div class="card-body">
-
-          <div id="result1">
-            <h5 class="card-title">Medicine Name</h5>
-            <p>Actual Price : 0.00</p>
-            <p>Discount(%) : 0.00</p>
-            <p>Website Name : NETMEDS</p>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img src="Images/image_4.png" class="card-img-top" alt="...">
-        <div class="card-body">
-
-          <div id="result2">
-            <h5 class="card-title">Medicine Name</h5>
-            <p>Actual Price : 0.00</p>
-            <p>Discount(%) : 0.00</p>
-            <p>Website Name : PHARMEASY</p>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img src="Images/image_4.png" class="card-img-top" alt="...">
-        <div class="card-body">
-
-          <div id="result3">
-            <h5 class="card-title">Medicine Name</h5>
-            <p>Actual Price : 0.00</p>
-            <p>Discount(%) : 0.00</p>
-            <p>Website Name : TATA 1mg</p>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img src="Images/image_4.png" class="card-img-top" alt="...">
-        <div class="card-body">
-
-          <div id="result4">
-            <h5 class="card-title">Medicine Name</h5>
-            <p>Actual Price : 0.00</p>
-            <p>Discount(%) : 0.00</p>
-            <p>Website Name : Apollo Pharmacy</p>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-
-  </section>
 
   <section>
 
-    <div class="btnContainer" id="btnContainer">
+    <h4>Trending Today</h4>
 
-      <div class="d-grid gap-2 col-6 mx-auto" style="margin-bottom: 20px;" id="compareResultBtn">
-          <div class="btn btn-primary compare-btn" type="submit" onclick="showResult()">Get The Best Medicine Price</div>
+    <div class="slick-slider multiple-items">
+
+      <div class="items">
+        <img src="Images/banner-img-6.jpg" alt="">
+        <div class="overlay"></div>
+      </div>
+      <div class="items">
+        <img src="Images/banner-img-3.jpg" alt="">
+        <div class="overlay"></div>
+      </div>
+      <div class="items">
+        <img src="Images/banner-img-4.jpg" alt="">
+        <div class="overlay"></div>
+      </div>
+      <div class="items">
+        <img src="Images/banner-img-5.png" alt="">
+        <div class="overlay"></div>
+      </div>
+      <div class="items">
+        <img src="Images/banner-img-7.png" alt="">
+        <div class="overlay"></div>
       </div>
 
     </div>
-
-  </section>
-
-  <section id="resultCard" class="resultCard">
-
-    <h4 style="margin-left: 50px;">Best Medicine Price</h4>
-
-    <div class="image-card" style="justify-content: flex-start;">
-
-      <div class="card" style="width: 18rem;">
-        <img src="Images/image_4.png" class="card-img-top" alt="...">
-        <div id="best" class="card-body">
-
-          <h5 class="card-title">Medicine Name</h5>
-          <p>Actual Price : 0.00</p>
-          <p>Discount(%) : 0.00</p>
-
-        </div>
-      </div>
-
-    </div>
-
 
   </section>
 
@@ -203,7 +134,7 @@
           </div>
         </div>
         <div class="middle box">
-          <div class="topic">Our Services</div>
+          <div class="topic">Useful Links</div>
           <div><a href="categories.html">Medicine By Symtoms</a></div>
           <div><a href="doctor-support.html">Professional Support</a></div>
           <div><a href="compare.html">Compare Medicine Price</a></div>
@@ -232,14 +163,16 @@
     </footer>
   </div>
 
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
   <script src="script.js"></script>
-  <script src="compareResult.js"></script>
 
 </body>
 
